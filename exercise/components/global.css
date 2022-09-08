@@ -14,5 +14,29 @@
     --contrast-text: #f8f8f2;
     --accent-1: #ff5555;
     --accent-2: #50fa7b;
+
 }
+
+@media (prefers-color-scheme: light){
+    :root{
+    --dark:#acacac;
+    --medium:#b3b3ae;
+    --light:#f8f8f2;
+    --contrast-text:#282a36;
+    }
+}
+html {
+    font-size: var(--font-size);
+}
+
+@media (min-width: 600px) {
+    :root {
+      --font-size: 1.2rem;
+    }
+  }
   
+  @media (min-width: 1000px) {
+    :root {
+      --font-size: 1.3rem;
+    }
+  }
